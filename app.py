@@ -39,5 +39,11 @@ def pi():
     print("El numero Pi:")
     return str(math.pi)
 
+#Ernesto Portugal
+#Metodo potencia
+@app.route('/potencia/<int:s1>/<int:s2>',methods['GET'])
+def potencia(s1,s2):
+        return str(s1**s2)
+
 if __name__ == '__main__':
     app.run()
